@@ -14,7 +14,7 @@ hostname = block-app-small-api.bloks.com
 
 *************************************/
 
-var obj = JSON.parse($response.body);
+var obj = JSON.parse(response.body);
     obj.data.userhas = 1;
 
-$done({body : JSON.stringify(uknow)});
+$done({body : JSON.stringify(obj)});
