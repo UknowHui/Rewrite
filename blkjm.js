@@ -5,12 +5,12 @@
 使用声明：⚠️仅供参考，🈲转载与售卖！
 
 **************************************
-https://block-app-small-api.bloks.com/block/622
+https://block-app-small-api.bloks.com/block/111
 [rewrite_local]
-^https?:\/\/block-app-small-api\.itunes\.block\/[0-9]+$ url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes/LogInput.js
+^https?:\/\/block-app-small-api\.block\.com\/block\/[0-9]+$ url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/blkjm.js
 
 [mitm]
-hostname = buy.itunes.apple.com
+hostname = block-app-small-api.bloks.com
 
 *************************************/
 
@@ -33,7 +33,7 @@ uknow = {
       "title" : "英雄无限-孙悟空-齐天飞车",
       "ownersnum" : 0,
       "bgpicurl" : "",
-      "userhas":0,
+      "userhas":1,
       "is_association" : 0,
       "bgcolor" : "",
       "advertUrl" : null
