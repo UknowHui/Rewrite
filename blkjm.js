@@ -7,7 +7,7 @@
 **************************************
 https://block-app-small-api.bloks.com/block/111
 [rewrite_local]
-^https?:\/\/block-app-small-api\.block\.com\/block\/[0-9]+$ url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/blkjm.js
+^https?:\/\/block-app-small-api\.bloks\.com\/block\/[0-9]+$ url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/blkjm.js
 
 [mitm]
 hostname = block-app-small-api.bloks.com
@@ -21,7 +21,6 @@ uknow = {
     "code" : 0,
     "message" : "success",
     "data" : {
-      "id" : 622,
       "advert_type" : "",
       "media_intro_resource" : null,
       "picurl" : "https://static-sku.putaocdn.com/blocks/resources/sku/10967/20221129160215e8qzkb0we27s9e9l.png",
