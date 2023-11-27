@@ -15,30 +15,30 @@ hostname = block-app-small-api.bloks.com
 *************************************/
 
 var obj = JSON.parse($response.body);
-    obj.data.userhas = true;
+    // obj.data.userhas = true;
 
-    // obj = {
-    //     "code" : 0,
-    //     "message" : "success",
-    //     "data" : {
-    //       "advert_type" : "",
-    //       "media_intro_resource" : null,
-    //       "picurl" : "https://static-sku.putaocdn.com/blocks/resources/sku/10967/20221129160215e8qzkb0we27s9e9l.png",
-    //       "themes" : null,
-    //       "block_sku_id" : "85008",
-    //       "category_id" : 48,
-    //       "is_theme_block" : 0,
-    //       "media_intro_type" : "",
-    //       "title" : "英雄无限-孙悟空-齐天飞车",
-    //       "ownersnum" : 0,
-    //       "bgpicurl" : "",
-    //       "userhas":1,
-    //       "is_association" : 0,
-    //       "bgcolor" : "",
-    //       "advertUrl" : null
-    //     },
-    //     "time" : 1701017991674
-    //   };
+    obj = {
+        "code" : 0,
+        "message" : "success",
+        "data" : {
+          "advert_type" : "",
+          "media_intro_resource" : null,
+          "picurl" : "https://static-sku.putaocdn.com/blocks/resources/sku/10967/20221129160215e8qzkb0we27s9e9l.png",
+          "themes" : null,
+          "block_sku_id" : "85008",
+          "category_id" : 48,
+          "is_theme_block" : 0,
+          "media_intro_type" : "",
+          "title" : "英雄无限-孙悟空-齐天飞车",
+          "ownersnum" : 0,
+          "bgpicurl" : "",
+          "userhas":1,
+          "is_association" : 0,
+          "bgcolor" : "",
+          "advertUrl" : null
+        },
+        "time" : 1701017991674
+      };
       
 
 $done({body : JSON.stringify(obj)});
