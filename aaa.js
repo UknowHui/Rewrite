@@ -15,8 +15,8 @@ hostname = increase-openapi.soulapp.cn
 *************************************/
 
 var obj = JSON.parse($response.body);
-    console.log(123123);
-    obj.data.status = false;
+    console.log(obj.data);
+    obj.data[0].status = false;
 
     // obj = {
     //     "code" : 0,
