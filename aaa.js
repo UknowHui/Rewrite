@@ -7,7 +7,7 @@
 **************************************
 https://increase-openapi.soulapp.cn/increase/sign/task/list?bi=["18ddf689864","--","Apple","iOS","17.3.1","17.3.1","iPhone 14","3","390*844","AppStore","WiFi","zh"]&bik=32243&pageId=SignPage
 [rewrite_local]
-^https:\/\/increase-openapi\.soulapp\.cn\/increase\/sign\/task\/list\?bi=\["([^"]+)",\s*"[^"]*",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)"\]&bik=(\d+)&pageId=([a-zA-Z]+) url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/aaa.js
+^https:\/\/increase-openapi\.soulapp\.cn\/increase\/sign\/task\/list url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/aaa.js
 
 [mitm]
 hostname = increase-openapi.soulapp.cn
