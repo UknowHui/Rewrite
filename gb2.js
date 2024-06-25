@@ -7,7 +7,7 @@
 **************************************
 
 [rewrite_local]
-https:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/ingore\/getPriceByScheduleId\?hallId=1&openPerson=1&queryDate=2024%2F06%2F30&saleMode=1&scheduleId=1&p=wxmini url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb2.js
+https:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/ingore\/getPriceByScheduleId\?hallId=1&openPerson=1&queryDate=2024%2F06%2F30&saleMode=1&scheduleId=*&p=wxmini url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb2.js
 [mitm]
 hostname = wxmini.chnmuseum.cn
 
@@ -26,9 +26,9 @@ function sendNotification(title, subtitle, message) {
   
   // 发送一个示例通知
   sendNotification("第二步", "获取预约信息", JSON.stringify(obj));
-// data[0].status = 4;
-// data[0].ticketPool = 200;
+data[0].status = 4;
+data[0].ticketPool = 200;
 
-// obj.data = data
+obj.data = data
 // $notification.post(obj)
 $done({body : JSON.stringify(obj)});
