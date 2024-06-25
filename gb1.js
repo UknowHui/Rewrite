@@ -21,7 +21,7 @@ function sendNotification(title, subtitle, message) {
   }
   
   // 发送一个示例通知
-  sendNotification("标题", "副标题", "这是一条通知信息11111");
+  
     var data = obj.data
     var arr = data.calendarTicketPoolsByDate
     const certificateVOS = [
@@ -147,5 +147,5 @@ function sendNotification(title, subtitle, message) {
     //     "time" : 1701017991674
     //   };
       
-
+sendNotification("第一步", "获取时间", JSON.stringify(obj));
 $done({body : JSON.stringify(obj)});
