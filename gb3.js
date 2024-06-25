@@ -7,14 +7,13 @@
 **************************************
 
 [rewrite_local]
-https:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/getBlock\?nonce=*&platform=2&docType=1&p=wxmini url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb3.js
+https:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/getBlock\?nonce=buhpkXh5%2BCjWPTY4u9CclKXibAgUarxj5xmne%2FbHjPKPOCm9VApw2eZp2wSomxh%2B&platform=2&docType=1&p=wxmini url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb3.js
 [mitm]
 hostname = wxmini.chnmuseum.cn
 
 *************************************/
 
 var obj = JSON.parse($response.body);
-obj.code = 200
 
 // 定义一个函数，用于发送通知
 function sendNotification(title, subtitle, message) {
