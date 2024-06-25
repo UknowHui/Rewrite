@@ -7,7 +7,7 @@
 **************************************
 
 [rewrite_local]
-https:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/ingore\/getPriceByScheduleId\?.* url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb2.js
+^https?:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/ingore\/getPriceByScheduleId\?.* url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb2.js
 [mitm]
 hostname = wxmini.chnmuseum.cn
 
