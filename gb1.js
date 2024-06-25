@@ -14,7 +14,7 @@ hostname = wxmini.chnmuseum.cn
 *************************************/
 
 var obj = JSON.parse($response.body);
-    obj.data.userhas = 1;
+    // obj.data.userhas = 1;
 
     var data = obj.data
     var arr = data.calendarTicketPoolsByDate

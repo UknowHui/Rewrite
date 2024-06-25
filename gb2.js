@@ -7,7 +7,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/ingore\/getPriceByScheduleId\?.* url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb2.js
+https:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/ingore\/getPriceByScheduleId\?.* url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb2.js
 [mitm]
 hostname = wxmini.chnmuseum.cn
 
@@ -16,7 +16,7 @@ hostname = wxmini.chnmuseum.cn
 var obj = JSON.parse($response.body);
 var data = obj.data;
   
-// body["aaastatus"] = data[0].status
+body["aaastatus"] = data[0].status
 // body["aaaticketPool"] = data[0].ticketPool
 
 
