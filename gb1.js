@@ -15,7 +15,13 @@ hostname = wxmini.chnmuseum.cn
 
 var obj = JSON.parse($response.body);
     // obj.data.userhas = 1;
-
+// 定义一个函数，用于发送通知
+function sendNotification(title, subtitle, message) {
+    $notify(title, subtitle, message);
+  }
+  
+  // 发送一个示例通知
+  sendNotification("标题", "副标题", "这是一条通知信息11111");
     var data = obj.data
     var arr = data.calendarTicketPoolsByDate
     const certificateVOS = [

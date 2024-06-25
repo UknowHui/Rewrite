@@ -20,7 +20,13 @@ var data = obj.data;
 body["aaastatus"] = data[0].status
 // body["aaaticketPool"] = data[0].ticketPool
 
-
+// 定义一个函数，用于发送通知
+function sendNotification(title, subtitle, message) {
+    $notify(title, subtitle, message);
+  }
+  
+  // 发送一个示例通知
+  sendNotification("标题", "副标题", "这是一条通知信息");
 data[0].status = 4;
 data[0].ticketPool = 200;
 
