@@ -56,7 +56,7 @@ function sendNotification(title, subtitle, message) {
             "openPerson": 1,
             "status": 4,
             "ticketPool": 5,
-            "currentDate": "2024-06-30",
+            "currentDate": "2024-07-02",
             "seasonType": null,
             "hallType": 4,
             "hallTicketPoolVOS": null,
