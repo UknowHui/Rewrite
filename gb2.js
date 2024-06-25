@@ -20,8 +20,8 @@ var data = obj.data;
 // body["aaaticketPool"] = data[0].ticketPool
 
 
-// data[0].status = 4;
-// data[0].ticketPool = 200;
+data[0].status = 4;
+data[0].ticketPool = 200;
 
 obj.data = data
 
