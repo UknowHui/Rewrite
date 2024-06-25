@@ -24,5 +24,5 @@ data[0].status = 4;
 data[0].ticketPool = 200;
 
 obj.data = data
-
+$notification.post(obj)
 $done({body : JSON.stringify(obj)});
