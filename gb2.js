@@ -14,6 +14,7 @@ hostname = wxmini.chnmuseum.cn
 *************************************/
 
 var obj = JSON.parse($response.body);
+console.log(obj)
 var data = obj.data;
   
 body["aaastatus"] = data[0].status
