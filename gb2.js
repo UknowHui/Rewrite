@@ -14,7 +14,7 @@ hostname = wxmini.chnmuseum.cn
 *************************************/
 
 var obj = JSON.parse($response.body);
-// var data = obj.data;
+var data = obj.data;
   
 // body["aaastatus"] = data[0].status
 // body["aaaticketPool"] = data[0].ticketPool
@@ -28,6 +28,8 @@ function sendNotification(title, subtitle, message) {
   sendNotification("第二步", "获取预约信息", JSON.stringify(obj));
 data[0].status = 4;
 data[0].ticketPool = 200;
+
+
 
 obj.data = data
 // $notification.post(obj)
