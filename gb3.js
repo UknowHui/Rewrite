@@ -7,29 +7,22 @@
 **************************************
 
 [rewrite_local]
-https:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/ingore\/getPriceByScheduleId\?hallId=1&openPerson=1&queryDate=*&saleMode=1&scheduleId=*&p=wxmini url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb2.js
+https:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/getBlock\?nonce=*&platform=2&docType=1&p=wxmini url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb3.js
 [mitm]
 hostname = wxmini.chnmuseum.cn
 
 *************************************/
 
 var obj = JSON.parse($response.body);
-var data = obj.data;
-  
-// body["aaastatus"] = data[0].status
-// body["aaaticketPool"] = data[0].ticketPool
+obj.code = 200
 
 // 定义一个函数，用于发送通知
 function sendNotification(title, subtitle, message) {
     $notify(title, subtitle, message);
 }
-  
-  
-data[0].status = 4;
-data[0].ticketPool = 200;
-obj.data = data
+
 
 // 发送一个示例通知
-sendNotification("第二步", "获取预约信息", JSON.stringify(obj));
+sendNotification("第三步", "获取验证码", JSON.stringify(obj));
 
 $done({body : JSON.stringify(obj)});
