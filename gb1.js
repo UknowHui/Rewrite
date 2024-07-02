@@ -7,7 +7,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/*\.chnmuseum\.cn\/prod-api\/basesetting\/HallSetting\/gainAllSystemConfigLogin\?.* url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb1.js
+^https:\/\/[^\/]*\.chnmuseum\.cn\/prod-api\/basesetting\/HallSetting\/gainAllSystemConfigLogin\?.*$ url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb1.js
 [mitm]
 hostname = wxmini.chnmuseum.cn
 

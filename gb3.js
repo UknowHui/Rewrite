@@ -7,7 +7,7 @@
 **************************************
 
 [rewrite_local]
-https:\/\/wxmini\.chnmuseum\.cn\/prod-api\/pool\/getBlock\?.* url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb3.js
+^https:\/\/[^\/]*\.chnmuseum\.cn\/prod-api\/pool\/getBlock\?.*$ url script-response-body https://raw.githubusercontent.com/UknowHui/Rewrite/main/gb3.js
 [mitm]
 hostname = wxmini.chnmuseum.cn
 
